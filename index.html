@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptop.fix - best repair shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <div class="grid-container">
+                <div class="grid">
+                    <header>
+                        <a href="#">laptop.fix</a>                
+                    </header>
+                    <img src="./images/hero-banner.png" alt="">  
+                </div>
+                <div class="grid">
+                    <h1><span>The Best</span> Laptop Care</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni maxime earum fugiat eos perferendis odio, nulla deserunt praesentium rerum.</p>
+
+                    <div class="form-container">
+                        <form action="">
+                            <div class="form-left">
+                                <label for="city">Enter your city:</label>
+                                <input type="text" name="city" id="city">
+                                <p>Example: "Duisburg"</p>
+                            </div>
+                            <input type="button" value="Find Service Now" id="cta-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Smart. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non. Nobis minus veniam esse quidem numquam atque hic, id ipsam aspernatur optio repellendus, tenetur reiciendis totam, praesentium facilis magnam omnis.</p>
+        </div>
+        <img src="images/macbook-1999639_1920.png" alt="Laptop picture">
+    </section>
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+        })
+
+    </script>
+</body>
+</html>
